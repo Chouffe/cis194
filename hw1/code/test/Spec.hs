@@ -10,6 +10,7 @@ import Lib
   , validate
   )
 
+tests :: Test
 tests = test [ "toDigits" ~: "toDigits 1234" ~: [1, 2, 3, 4] ~=? toDigits 1234
              , "toDigits" ~: "toDigits 0" ~: [] ~=? toDigits 0
              , "toDigits" ~: "toDigits (-17)" ~: [] ~=? toDigits (-17)
